@@ -27,3 +27,12 @@ The 1913 reprint is available [here](https://archive.org/details/hkainediatheket
 
 The [N1904-TF dataset](https://centerblc.github.io/N1904/) available under [MIT license](https://github.com/CenterBLC/N1904/blob/main/LICENSE.md). Formal reference: 
 > Tony Jurg, Saulo de Oliveira Cantanhêde, & Oliver Glanz. (2024). *CenterBLC/N1904: Nestle 1904 Text-Fabric data*. Zenodo. DOI: [10.5281/zenodo.13117911](https://doi.org/10.5281/zenodo.13117910).
+
+## License
+
+This notebook is released under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://github.com/tonyjurg/Create_OSIS_ID_feature_for_TF/blob/main/LICENSE.md)
+
+## Citation
+
+If you use this repository in your academic work, please [cite it](CITATION.cff).
+
