@@ -1,0 +1,115 @@
+{
+  "repo_notes": [
+    {
+      "content": ""
+    }
+  ],
+  "pages": [
+    {
+      "title": "Overview",
+      "purpose": "High-level introduction to the Create_OSIS_ID_feature_for_TF project: its purpose, the problem it solves, key components, and how the pieces fit together. Links to child pages for setup and background context.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "purpose": "Practical guide for running the project: prerequisites (Python, Text-Fabric, Jupyter), how to clone the repository, how to open and execute OSIS_ref.ipynb, and where the output feature file is written.",
+      "parent": "Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Background & Standards",
+      "purpose": "Explains the domain context: what OSIS (Open Scriptural Information Standard) is, what Text-Fabric is, what the Nestle 1904 Greek New Testament dataset (N1904-TF) is, and why mapping book names to OSIS IDs is useful for cross-platform biblical research.",
+      "parent": "Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Pipeline Architecture",
+      "purpose": "Overview of the end-to-end data transformation pipeline: from loading the N1904 corpus through mapping and serialization to distribution via N1904addons. Links to child pages covering the notebook logic and the output feature file.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "OSIS_ref.ipynb — Notebook Walkthrough",
+      "purpose": "Detailed walkthrough of the production Jupyter Notebook: environment initialization (tf.app.use, autoreload), the osisID mapping dictionary (27 NT books), the data-processing loop over book/chapter/verse nodes, the createMetadata helper function, and the TF.save() serialization call.",
+      "parent": "Pipeline Architecture",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Output Feature File — osis_id.tf",
+      "purpose": "Documents the generated Text-Fabric feature file tf/1.0.0/osis_id.tf: its metadata header fields (@node, @valueType, @author, @version, @license, etc.), the node-offset data layout, the two discontinuous node ranges (book-level nodes starting at 137780 and verse-level nodes starting at 382714), and how to consume the feature via F.osis_id.v(node).",
+      "parent": "Pipeline Architecture",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Distribution via N1904addons",
+      "purpose": "Explains the 'side-loading' distribution pattern: how the generated osis_id.tf file is moved to the N1904addons repository, how end-users load it with the TF Fabric modules parameter, and why this decoupled architecture keeps the core N1904 dataset immutable.",
+      "parent": "Pipeline Architecture",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Repository Structure & Assets",
+      "purpose": "Overview of the repository layout, non-code assets, and project metadata files. Links to child pages covering licensing and the images directory.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Licensing & Attribution",
+      "purpose": "Documents the CC BY 4.0 license under which the notebook and feature data are released, the required attribution string (https://github.com/tonyjurg/N1904addons), the warranty disclaimer, and the distinction between the CC BY 4.0 data license and the MIT license of the upstream N1904-TF dataset.",
+      "parent": "Repository Structure & Assets",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Project Configuration & Assets",
+      "purpose": "Covers the repository's supporting files: the .gitignore configuration (excluding .ipynb_checkpoints), the images/ directory containing the CC-BY-40.png license badge, and the images/README.md asset index.",
+      "parent": "Repository Structure & Assets",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Glossary",
+      "purpose": "Definitions of all codebase-specific terms, domain jargon, abbreviations, and key identifiers that an onboarding engineer or biblical-informatics researcher would need to understand this project. Each entry includes code pointers where applicable.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
